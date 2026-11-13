@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>QR Code Generator by TBolt</title>
+
+    <meta name="description" content="Generate free QR codes instantly with QR Code Generator by TBolt. Create and download QR codes easily.">
+
+    <meta name="theme-color" content="#0b0b12">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <span class="logo-icon">QR</span>
+            <span>TBolt</span>
+        </div>
+
+        <span class="header-tag">FREE QR GENERATOR</span>
+    </header>
+
+    <main class="main-container">
+
+        <section class="hero">
+            <span class="hero-label">SIMPLE • FAST • FREE</span>
+
+            <h1>QR Code <span>Generator</span></h1>
+
+            <p>
+                Create your QR code instantly.
+                No login, no subscription, completely free.
+            </p>
+        </section>
+
+        <section class="generator-card">
+
+            <div class="input-section">
+
+                <label for="qrText">Enter your text or URL</label>
+
+                <textarea
+                    id="qrText"
+                    placeholder="https://example.com"
+                    rows="4"
+                ></textarea>
+
+                <div class="options">
+
+                    <div class="option-group">
+                        <label for="qrSize">QR Size</label>
+
+                        <select id="qrSize">
+                            <option value="200">200 × 200</option>
+                            <option value="300" selected>300 × 300</option>
+                            <option value="400">400 × 400</option>
+                            <option value="500">500 × 500</option>
+                        </select>
+                    </div>
+
+                    <div class="option-group">
+                        <label for="qrColor">QR Color</label>
+
+                        <input
+                            type="color"
+                            id="qrColor"
+                            value="#000000"
+                        >
+                    </div>
+
+                </div>
+
+                <button id="generateBtn" class="generate-btn">
+                    Generate QR Code
+                </button>
+
+            </div>
+
+            <div class="result-section">
+
+                <h2>Your QR Code</h2>
+
+                <div id="qrResult" class="qr-result">
+                    <div class="qr-placeholder">
+                        <span>▦</span>
+                        <p>Your QR code will appear here</p>
+                    </div>
+                </div>
+
+                <button id="downloadBtn" class="download-btn" disabled>
+                    Download QR Code
+                </button>
+
+                <p class="result-note">
+                    Your QR code is generated in your browser.
+                </p>
+
+            </div>
+
+        </section>
+
+        <section class="features">
+
+            <div class="feature">
+                <span>⚡</span>
+                <h3>Fast Generation</h3>
+                <p>Generate QR codes in seconds.</p>
+            </div>
+
+            <div class="feature">
+                <span>🔒</span>
+                <h3>Privacy Friendly</h3>
+                <p>Your content stays in your browser.</p>
+            </div>
+
+            <div class="feature">
+                <span>💎</span>
+                <h3>Always Free</h3>
+                <p>No subscription or account required.</p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 QR Code Generator by TBolt</p>
+        <p>Made for everyone.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
